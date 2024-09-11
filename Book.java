@@ -22,11 +22,4 @@ class Book
         title = bookTitle;
     }
 
-    public printAuthor()
-    {}
-    
-    public printTitle()
-    {}
-    
-    
 }
