@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
 
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
@@ -54,6 +55,16 @@ class Book
         return refNumber;
     }
     
+    public void borrow()
+    {
+         borrowed++;
+    }
+
+    public int getBorrowed()
+    {
+         return borrowed;
+    } 
+    
     public void printDetails()
     {
         System.out.println("Author: " + author);
@@ -68,6 +79,8 @@ class Book
         {
             System.out.println("Reference number:" + "ZZZ");
         }
+        
+        System.out.println("Borrowed: " + borrowed);
     }
 
 }
